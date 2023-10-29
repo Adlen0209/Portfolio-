@@ -1,0 +1,153 @@
+@font-face {
+  font-family: karla;
+  src: url('../assets/karla.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: karla-Italic;
+  src: url('../assets/karla-Italic.ttf') format("truetype");
+}
+
+.HeaderWrapper {
+    max-width: 65%; /*100%*/
+    margin: 0 auto; /*none */
+    background-color: #FCFCFD;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+     @media screen and (max-width: 992px) {
+       max-width: 80%;
+       display: block;
+      padding-top: 6rem;
+      margin: 3rem;
+      height: 90vh;
+      
+
+      
+     }
+    
+}
+
+.HeaderText {
+    width: 60%;
+    min-width: 350px;
+    
+     @media screen and (max-width: 992px) {
+      min-width: none;
+     width: 100%;    
+     }
+    
+    
+}
+
+h1 {
+    font-weight: 600;
+    width: 50%;
+    
+    font-size: 2.5rem;
+    color:#DB4646;
+    
+    
+    font-family: karla;
+     @media screen and (max-width: 992px) {
+       font-size: 2rem;
+     }
+     @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 2.2rem;
+     
+   
+    }
+}
+
+p {
+    width: 85%;
+   
+    line-height: 1.6;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: karla;
+   
+  
+     @media screen and (max-width: 992px) {
+      font-size: 1.3rem;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 1.4rem;
+     
+   
+    }
+}
+
+span {
+    color: #DB4646;
+    text-shadow: 1px 2px 1.5px rgba(0,0,0,0.3);
+    font-family: karla-Italic;
+    font-weight: L;
+}
+
+.ImageContainer {
+  max-width: 100%;
+  text-align: center;
+}
+.ImageIllustration {
+    width: 400px;
+    height: 400px;
+     @media screen and (max-width: 992px) {
+    width: 350px;
+    height: 350px;
+     
+     }
+     @media screen and (min-width: 992px) and (max-width: 1200px) {
+      width: 350px;
+      height: 350px;
+     
+   
+    }
+}
+
+menu-toggle {
+    top: 24px;
+    position: absolute;
+    top: 24px;
+    width: 400px;
+  background: var(--accent);
+  padding-top: 100px;
+  transform: translateX(-100%);
+  will-change: transform;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 9px;
+    opacity: 1;
+    left: 50%;
+    display: flex;
+    width: 30px;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    transition: opacity 0.5s;
+
+    @media screen and (max-width: 992px) {
+      width: 20px; 
+       }
+   
+   
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(0) translateX(-50%);
+    }
+    70% {
+      transform: translateY(-10px) translateX(-50%);
+    }
+    100% {
+      transform: translateY(0) translateX(-50%);
+    }
+  }
+
