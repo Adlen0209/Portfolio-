@@ -1,11 +1,13 @@
 import { FunctionComponent, useEffect } from "react";
 import React, {useState} from 'react';
 import '../Style/main.scss'
+import { useMediaQuery } from 'react-responsive';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 export const Projects: FunctionComponent = () => {
 
+    const isMobile = useMediaQuery({ query: '(max-width: 992px)'});
     const [isShown1, setIsShown1] = useState(false)
     const [isShown2, setIsShown2] = useState(false)
     const [isShown3, setIsShown3] = useState(false)
@@ -19,8 +21,8 @@ export const Projects: FunctionComponent = () => {
   <section  className="projects" id="projects">
     <p className="projects-title">Hover over any project to learn more !</p>
     <div className="firstRow">
-        <div   data-aos="fade-right"
-             data-aos-duration="2000"
+        <div   data-aos={isMobile ? "flip-down": "fade-right"}
+             data-aos-duration="1500"
      className="microscope" onMouseEnter={() => setIsShown1(true)}  onMouseLeave={() => setIsShown1(false)}>
         <div className="microscope-mockup">
           <img className="microscope-mockup" src="src\assets\microscope.PNG" />
@@ -44,16 +46,16 @@ export const Projects: FunctionComponent = () => {
                 <li className="toolsUsed-li">Redux</li>
               </ul>
               <div className="redirect">
-            <a href="" className="projects-links"> Front-end </a>
-            <a href="" className="projects-links"> Back-end </a>
+            <a href="https://github.com/Adlen0209/Microscope-web-front" className="projects-links"> Front-end </a>
+            <a href="https://github.com/Adlen0209/Microscope-web-back" className="projects-links"> Back-end </a>
             </div>
             </div>
           )}
          
         </div>
-        <div data-aos="fade-down"
+        <div data-aos={isMobile ? "flip-left": "fade-down"}
      data-aos-easing="linear"
-     data-aos-duration="2000"
+     data-aos-duration="1500"
      className="blog" onMouseEnter={() => setIsShown2(true)}  onMouseLeave={() => setIsShown2(false)}>
         <div className="blog-mockup">
           <img className="blog-mockup" src="src\assets\blog.jpg" />
@@ -73,8 +75,8 @@ export const Projects: FunctionComponent = () => {
              
             </ul>
             <div className="redirect">
-          <a href="" className="projects-links"> Front-end </a>
-          <a href="" className="projects-links"> Back-end </a>
+          <a href="https://github.com/Adlen0209/front-blogApi" className="projects-links"> Front-end </a>
+          <a href="https://github.com/Adlen0209/BlogApi" className="projects-links"> Back-end </a>
           </div>
           </div>
           )}
@@ -84,8 +86,8 @@ export const Projects: FunctionComponent = () => {
     
     </div>
     <div className="secondRow">
-        <div data-aos="fade-up"
-     data-aos-duration="2000"
+        <div data-aos={isMobile ? "flip-right": "fade-up"}
+     data-aos-duration="1500"
      className="busuu" onMouseEnter={() => setIsShown3(true)}  onMouseLeave={() => setIsShown3(false)}>
         <div className="portfolio-mockup">
           <img className="portfolio-mockup" src="src\assets\portfolio.jpg" />
@@ -104,7 +106,7 @@ export const Projects: FunctionComponent = () => {
                      
             </ul>
             <div className="redirect">
-          <a href="" className="projects-links"> Front-end </a>
+          <a href="https://github.com/Adlen0209/Portfolio-" className="projects-links"> Front-end </a>
           
           </div>
           </div>
@@ -113,8 +115,8 @@ export const Projects: FunctionComponent = () => {
 
             
         </div>
-        <div data-aos="fade-left"
-             data-aos-duration="2000"
+        <div data-aos={isMobile ? "flip-up": "fade-left"}
+             data-aos-duration="1500"
              className="portfolio" onMouseEnter={() => setIsShown4(true)}  onMouseLeave={() => setIsShown4(false)}>
         <div className="busuu-mockup">
           <img className="busuu-mockup" src="src\assets\busuu.jpg" />
@@ -133,8 +135,8 @@ export const Projects: FunctionComponent = () => {
              <li className="toolsUsed-li">PostgreSQL</li>          
            </ul>
            <div className="redirect">
-         <a href="" className="projects-links"> Front-end </a>
-         <a href="" className="projects-links"> Back-end </a>
+         {/* <a href="" className="projects-links"> Front-end </a> */}
+         <a href="https://github.com/Adlen0209/busuu3" className="projects-links"> Back-end </a>
          </div>
          </div>
          </div>
