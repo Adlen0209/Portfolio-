@@ -23,7 +23,7 @@ export const AboutMe: FunctionComponent = () => {
           pleasure in pair programming and thrive on being a team player,
           fostering a strong team spirit.</p>
           </div>
-          <img src="src\assets\image.jpg" className="pic"></img>
+          <img src="/image.jpg" className="pic"></img>
           </div>
             </div>
 
@@ -32,45 +32,45 @@ export const AboutMe: FunctionComponent = () => {
                 <h2>My Toolkit</h2>
                  <ul className="skills-ul">
                        <li className="skills-li">
-                           <img src="src\assets\html.svg" ></img>
+                           <img src="/html.svg" ></img>
                           <h4 className="skills-txt">HTML5</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\css.svg" ></img>
+                           <img src="/css.svg" ></img>
                           <h4 className="skills-txt">CSS3</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\sass.svg" ></img>
+                           <img src="/sass.svg" ></img>
                           <h4 className="skills-txt">SASS</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\javascript.svg" ></img>
+                           <img src="/javascript.svg" ></img>
                           <h4 className="skills-txt">Javascript</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\react.svg" ></img>
+                           <img src="/react.svg" ></img>
                           <h4 className="skills-txt">React</h4> 
                        </li>
                 </ul>
                 <ul className="skills-ul">
                        <li className="skills-li">
-                           <img src="src\assets\github.svg" ></img>
+                           <img src="/github.svg" ></img>
                           <h4 className="skills-txt">Github</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\nodejs.svg" ></img>
+                           <img src="/nodejs.svg" ></img>
                           <h4 className="skills-txt">NodeJS</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\postgresql.svg" ></img>
+                           <img src="/postgresql.svg" ></img>
                           <h4 className="skills-txt">PostgreSQL</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\docker.svg" ></img>
+                           <img src="/docker.svg" ></img>
                           <h4 className="skills-txt">Docker</h4> 
                        </li>
                        <li className="skills-li">
-                           <img src="src\assets\typescript.svg" ></img>
+                           <img src="/typescript.svg" ></img>
                           <h4 className="skills-txt">Typescript</h4> 
                        </li>
                 </ul>

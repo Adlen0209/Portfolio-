@@ -1,0 +1,9 @@
+version: '1'
+
+services:
+  portfolio-react:
+    container_name: "portfolio-react"
+    image: portfolio-adlen
+    ports:
+      - '6007:8080'
+    restart: always

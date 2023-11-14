@@ -1,6 +1,6 @@
 import '../Style/menu.scss';
 
-const Path = (props) => (
+const Path = (props: any) => (
     <path
       fill="transparent"
       strokeWidth="3"

@@ -1,4 +1,4 @@
-import { FunctionComponent, useEffect } from "react";
+import { FunctionComponent, useEffect} from "react";
 import '../Style/header.scss';
 import { Scroll } from "./ScrollDown";
 import Aos from "aos";
@@ -10,6 +10,8 @@ type HeaderProps = {
 }
 
 export const Header: FunctionComponent<HeaderProps> = () => {
+    
+
     useEffect(() => {
         Aos.init()
     }, [])
@@ -27,7 +29,7 @@ export const Header: FunctionComponent<HeaderProps> = () => {
             </div>
             <div  data-aos="fade-left"
              data-aos-duration="3000"  className="ImageContainer">
-                <img className="ImageIllustration" src="src\assets\4401280.svg"></img>
+                <img className="ImageIllustration" src="/4401280.svg"></img>
             </div>
             <Scroll />
         </div>

@@ -11,6 +11,7 @@ export const Contact: FunctionComponent = () => {
   useEffect(() => {
     Aos.init()
 }, [])
+    
     const [messages, setMessages] = useState<MessageState[]>([]);
     const [formData, setFormData] = useState<FormData>({
         'name': '',
@@ -29,6 +30,7 @@ export const Contact: FunctionComponent = () => {
         if (!isValid) {
           const errorMessages: MessageState[] = validate.errors?.map((error) => ({ message: error.message ?? '', type: 'error' })) || [];
           setMessages(errorMessages);
+          console.log(messages);
           return;
         }
     
@@ -60,7 +62,7 @@ export const Contact: FunctionComponent = () => {
             <div className="form-wrapper">
     <div className="contact-txt">
         <h2>Let's connect!</h2>
-        <p className="contact-txt-par">If you ever want to grab a coffe/tea <span className="none">(virtually)</span> or just want a quick chat, you can send me a message here !</p>        
+        <p className="contact-txt-par">If you ever want to grab a coffe/tea <span className="none">(virtually)</span> or just want a quick chat, you can send me a message here!</p>        
         </div>
     <form className="form" onSubmit={handleSubmit}>
 

@@ -1,5 +1,5 @@
 import { FunctionComponent, useEffect } from "react";
-import React, {useState} from 'react';
+import {useState} from 'react';
 import '../Style/main.scss'
 import { useMediaQuery } from 'react-responsive';
 import Aos from "aos";
@@ -25,15 +25,16 @@ export const Projects: FunctionComponent = () => {
              data-aos-duration="1500"
      className="microscope" onMouseEnter={() => setIsShown1(true)}  onMouseLeave={() => setIsShown1(false)}>
         <div className="microscope-mockup">
-          <img className="microscope-mockup" src="src\assets\microscope.PNG" />
+          <img className="microscope-mockup" src="/microscope.PNG" />
         </div>
           
           {isShown1 && (
             <div className="isShown1">
             <h3> Microscope Web </h3>
-            <p className="projects-paragraph">This project was carried out as part of my final training project under
-              professional conditions. I contributed to our team of four
-              developers as the lead front-end developer.</p>
+            <p className="projects-paragraph">This project was carried out as part of my final training project
+under professional conditions. It represents our minimum viable
+product for the digital adaptation of Ben Robbins' collaborative
+writing game "Microscope".</p>
               <ul className="toolsUsed">
                 <li className="toolsUsed-li">Javascript</li>
                 <li className="toolsUsed-li">NodeJS</li>
@@ -58,12 +59,13 @@ export const Projects: FunctionComponent = () => {
      data-aos-duration="1500"
      className="blog" onMouseEnter={() => setIsShown2(true)}  onMouseLeave={() => setIsShown2(false)}>
         <div className="blog-mockup">
-          <img className="blog-mockup" src="src\assets\blog.jpg" />
+          <img className="blog-mockup" src="/blog.jpg" />
         </div>
         {isShown2 && (
           <div className="isShown3">
             <h3> Simple blog </h3>
-            <p className="projects-paragraph">This project is a simple blog, as the name suggests ...</p>
+            <p className="projects-paragraph">This project is a simple blog, created with the purpose of practicing
+the design of an API and its consumption on the front end.</p>
             <ul className="toolsUsed">
               <li className="toolsUsed-li">Typescript</li>
               <li className="toolsUsed-li">SASS</li>
@@ -90,7 +92,7 @@ export const Projects: FunctionComponent = () => {
      data-aos-duration="1500"
      className="busuu" onMouseEnter={() => setIsShown3(true)}  onMouseLeave={() => setIsShown3(false)}>
         <div className="portfolio-mockup">
-          <img className="portfolio-mockup" src="src\assets\portfolio.jpg" />
+          <img className="portfolio-mockup" src="/portfolio.jpg" />
         </div>
         {isShown3 && (
           <div className="isShown2">
@@ -119,16 +121,17 @@ export const Projects: FunctionComponent = () => {
              data-aos-duration="1500"
              className="portfolio" onMouseEnter={() => setIsShown4(true)}  onMouseLeave={() => setIsShown4(false)}>
         <div className="busuu-mockup">
-          <img className="busuu-mockup" src="src\assets\busuu.jpg" />
+          <img className="busuu-mockup" src="/busuu.jpg" />
         </div>
         {isShown4 && (
           <div className="isShown4">
            <div className="project-wrapper">
            <h3> Busuu </h3>
-           <p className="projects-paragraph">  [Under construction] Busuu is an application project designed to
-             assist the user in their fitness routine. The main objective of
-             this project is to test the quality of my code by drawing
-             inspiration from more experienced developers.</p>
+           <p className="projects-paragraph"> [Under construction] Busuu is an application project designed to
+ assist the user in their fitness routine.
+I'm developing it to address the need for facilitating exercise
+selection and tracking performance, but, of course, also with the
+goal of practicing and improving my developer skills</p>
            <ul className="toolsUsed">
              <li className="toolsUsed-li">Typescript</li>
              <li className="toolsUsed-li">NodeJS</li>
