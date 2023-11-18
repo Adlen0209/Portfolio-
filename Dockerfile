@@ -1,6 +1,7 @@
-FROM node:latest
+FROM node:alpine 
 WORKDIR /Portfolio
-COPY . /Portfolio/
+COPY package.json .
 RUN npm install
+COPY . .
+EXPOSE 8080
 CMD ["npm", "run", "dev"]
-EXPOSE 6007

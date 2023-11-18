@@ -4,7 +4,7 @@ import '../Style/header.scss'
 
 export const Scroll: FunctionComponent = () => {
     return (
-        <div>
+        <div className="arrow">
               <img
               src={ScrollDown}
               className="scroll bounce"
